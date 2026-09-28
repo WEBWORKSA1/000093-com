@@ -1,0 +1,58 @@
+---
+layout: default
+title: "Chinese Stock Code Decoder — What Does This 6-Digit Code Mean?"
+description: "Decode any Shanghai, Shenzhen, Beijing or Hong Kong securities code: exchange, board, price limits, investor thresholds and Stock Connect status."
+root: ""
+tools: true
+---
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What does a stock code starting with 600 mean?","acceptedAnswer":{"@type":"Answer","text":"Codes starting 600, 601, 603 or 605 are Shanghai Stock Exchange Main Board A-shares with a ±10% daily price limit."}},{"@type":"Question","name":"What does a code starting with 000 mean?","acceptedAnswer":{"@type":"Answer","text":"000–003 prefixes are Shenzhen Main Board stocks. The 000xxx space is also used for Shanghai-side index codes and many off-exchange mutual-fund codes."}},{"@type":"Question","name":"What is the price limit on ChiNext and STAR?","acceptedAnswer":{"@type":"Answer","text":"±20% per day, with no limit in the first five trading days after IPO."}}]}</script>
+<section class="page-hero"><div class="container">
+  <div class="crumbs"><a href="index.html">Home</a> / Code Decoder</div>
+  <h1 data-zh="证券代码解读器">Chinese Stock-Code Decoder</h1>
+  <p>Enter a 6-digit mainland code or a Hong Kong code. You'll see the exchange, board, trading rules and who can buy it.</p>
+</div></section>
+
+<section class="block"><div class="container split">
+  <div>
+    <div class="tool">
+      <form id="decoder-form" class="tool-input"><label class="sr-only" for="code">Securities code</label><input id="code" name="code" inputmode="numeric" maxlength="8" placeholder="e.g. 600519 or 00700" autofocus><button class="btn btn-primary">Decode</button></form>
+      <div class="chips" data-chip-target="#code">
+        <button class="chip light" data-chip="000093">000093</button><button class="chip light" data-chip="000001">000001</button><button class="chip light" data-chip="600519">600519</button><button class="chip light" data-chip="300750">300750</button><button class="chip light" data-chip="688981">688981</button><button class="chip light" data-chip="920001">920001</button><button class="chip light" data-chip="510300">510300</button><button class="chip light" data-chip="00700">00700</button><button class="chip light" data-chip="08001">08001</button>
+      </div>
+      <div id="decoder-result" class="result" aria-live="polite"></div>
+    </div>
+
+    <div class="ad-slot" data-slot="inArticle"></div>
+
+    <h2 style="margin-top:40px">Prefix cheat-sheet</h2>
+    <p class="muted">Every mainland code is six digits. The first two or three digits tell you the exchange and board.</p>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Prefix</th><th>Exchange</th><th>Board / type</th><th>Daily limit</th></tr></thead>
+      <tbody>
+        <tr><td class="num">600 · 601 · 603 · 605</td><td>Shanghai</td><td>Main Board A-shares</td><td>±10%</td></tr>
+        <tr><td class="num">688 · 689</td><td>Shanghai</td><td>STAR Market (科创板)</td><td>±20%</td></tr>
+        <tr><td class="num">900</td><td>Shanghai</td><td>B-shares (USD)</td><td>±10%</td></tr>
+        <tr><td class="num">000 · 001 · 002 · 003</td><td>Shenzhen</td><td>Main Board A-shares (002/003 = former SME board)</td><td>±10%</td></tr>
+        <tr><td class="num">300 · 301 · 302</td><td>Shenzhen</td><td>ChiNext (创业板)</td><td>±20%</td></tr>
+        <tr><td class="num">200</td><td>Shenzhen</td><td>B-shares (HKD)</td><td>±10%</td></tr>
+        <tr><td class="num">920 (new) · 43x · 83x–87x (legacy)</td><td>Beijing</td><td>Beijing Stock Exchange</td><td>±30%</td></tr>
+        <tr><td class="num">51x · 56x · 58x</td><td>Shanghai</td><td>ETFs</td><td>±10% / ±20%</td></tr>
+        <tr><td class="num">15x · 16x</td><td>Shenzhen</td><td>ETFs & LOFs</td><td>±10% / ±20%</td></tr>
+        <tr><td class="num">11x / 12x</td><td>SH / SZ</td><td>Bonds & convertibles</td><td>Convertibles ±20%</td></tr>
+        <tr><td class="num">399</td><td>Shenzhen</td><td>Indices</td><td>—</td></tr>
+        <tr><td class="num">00001–07999</td><td>Hong Kong</td><td>Main Board (5-digit)</td><td>No limit</td></tr>
+        <tr><td class="num">08001–08999</td><td>Hong Kong</td><td>GEM</td><td>No limit</td></tr>
+      </tbody></table></div>
+    <p class="form-note">ST / *ST stocks (companies under special treatment) have a ±5% limit on the Main Boards. Rules are simplified for education, so check the official exchange rulebooks before you trade.</p>
+
+    <h2 style="margin-top:40px">Frequently asked</h2>
+    <details><summary>Why can the same six digits mean two different things?</summary><div>China uses more than one numbering system. Exchange listings, index codes and off-exchange mutual-fund codes can overlap. <span class="num">000001</span> is a Shenzhen bank stock on SZSE and also the SSE Composite Index code. Always check the market suffix (.SH / .SZ / .BJ / .HK).</div></details>
+    <details><summary>Can foreigners buy A-shares?</summary><div>Yes, through Northbound Stock Connect via a Hong Kong or international broker, through QFII/RQFII, or through ETFs that track Chinese indices. STAR and ChiNext names in Stock Connect are generally limited to institutional/professional investors.</div></details>
+    <details><summary>What do the suffixes .SS, .SZ and .HK mean?</summary><div>These are data-vendor suffixes: .SS or .SH for Shanghai, .SZ for Shenzhen, .BJ for Beijing and .HK for Hong Kong. They tell you which exchange a code belongs to.</div></details>
+  </div>
+  <aside class="sticky">
+    <div class="card"><span class="tag gold">Research brief</span><h3 style="margin-top:10px">Want a one-page brief on a Chinese stock?</h3><p>A specialist covers business model, board rules, liquidity, access route and red flags.</p><a class="btn btn-primary btn-block" style="margin-top:12px" href="services.html?service=research">Request a brief</a></div>
+    <div class="ad-slot ad-side" data-slot="sidebar"></div>
+    <div class="card"><h3>Related</h3><p><a href="insights/how-to-read-chinese-stock-codes.html">How to read Chinese stock codes →</a><br><a href="insights/stock-connect-explained.html">Stock Connect explained →</a><br><a href="markets.html">China Markets 101 →</a></p></div>
+  </aside>
+</div></section>

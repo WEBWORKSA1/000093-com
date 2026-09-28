@@ -1,0 +1,54 @@
+---
+layout: default
+title: "Chinese Lucky Number Analyzer — Score Phone Numbers, Plates, Dates & Domains"
+description: "Score any number for wealth, longevity, harmony and memorability using Chinese number culture. Free analyzer for phone numbers, plates, dates and numeric domains."
+root: ""
+tools: true
+---
+<section class="page-hero"><div class="container">
+  <div class="crumbs"><a href="index.html">Home</a> / Lucky Numbers</div>
+  <h1 data-zh="吉祥数字分析器">Lucky Number Analyzer</h1>
+  <p>Paste a phone number, licence plate, date or numeric domain. You'll get a score based on the homophones and combinations Chinese speakers actually use.</p>
+</div></section>
+
+<section class="block"><div class="container split">
+  <div>
+    <div class="tool">
+      <div class="tabs" role="tablist" aria-label="Number type">
+        <button class="tab" role="tab" aria-selected="true" data-mode="general" data-ph="Any number, e.g. 000093">Any number</button>
+        <button class="tab" role="tab" aria-selected="false" data-mode="phone" data-ph="Phone, e.g. 138 8888 1688">Phone</button>
+        <button class="tab" role="tab" aria-selected="false" data-mode="plate" data-ph="Plate digits, e.g. 88168">Licence plate</button>
+        <button class="tab" role="tab" aria-selected="false" data-mode="date" data-ph="Date YYYYMMDD, e.g. 20260903">Date</button>
+        <button class="tab" role="tab" aria-selected="false" data-mode="domain" data-ph="Numeric domain, e.g. 000093">Numeric domain</button>
+      </div>
+      <form id="lucky-form" class="tool-input"><label class="sr-only" for="num">Number</label><input id="num" name="num" inputmode="numeric" placeholder="Any number, e.g. 000093"><button class="btn btn-primary">Analyze</button></form>
+      <div id="lucky-result" class="result" aria-live="polite"></div>
+    </div>
+
+    <div class="ad-slot" data-slot="inArticle"></div>
+
+    <h2 style="margin-top:40px">The digits at a glance</h2>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Digit</th><th>汉字</th><th>Pinyin</th><th>Sounds like</th><th>Read as</th></tr></thead>
+      <tbody>
+        <tr><td class="num">0</td><td class="zh">零</td><td>líng</td><td>—</td><td>Wholeness, a clean start</td></tr>
+        <tr><td class="num">1</td><td class="zh">一 / 幺</td><td>yī / yāo</td><td>—</td><td>Unity, being number one</td></tr>
+        <tr><td class="num">2</td><td class="zh">二</td><td>èr</td><td>—</td><td>Pairs and harmony</td></tr>
+        <tr><td class="num">3</td><td class="zh">三</td><td>sān</td><td>生 life / 散 scatter</td><td>Mixed, depends on context</td></tr>
+        <tr><td class="num">4</td><td class="zh">四</td><td>sì</td><td>死 death</td><td>Avoided</td></tr>
+        <tr><td class="num">5</td><td class="zh">五</td><td>wǔ</td><td>我 me / 无 none</td><td>Neutral</td></tr>
+        <tr><td class="num">6</td><td class="zh">六</td><td>liù</td><td>流 flow</td><td>Smooth progress</td></tr>
+        <tr><td class="num">7</td><td class="zh">七</td><td>qī</td><td>起 rise / 气 anger</td><td>Mixed</td></tr>
+        <tr><td class="num">8</td><td class="zh">八</td><td>bā</td><td>发 prosper</td><td>The luckiest digit</td></tr>
+        <tr><td class="num">9</td><td class="zh">九</td><td>jiǔ</td><td>久 lasting</td><td>Longevity</td></tr>
+      </tbody></table></div>
+
+    <h2 style="margin-top:40px" id="quiz-sec">60-second number quiz</h2>
+    <div class="tool" id="quiz"></div>
+  </div>
+  <aside class="sticky">
+    <div class="card"><span class="tag gold">Premium numbers</span><h3 style="margin-top:10px">Buying or selling a lucky number or domain?</h3><p>We match buyers and sellers of numeric domains and help you work out a fair price.</p><a class="btn btn-primary btn-block" style="margin-top:12px" href="services.html?service=domains">Get a valuation</a></div>
+    <div class="ad-slot ad-side" data-slot="sidebar"></div>
+    <div class="card"><h3>Share your number</h3><p>Got a great result? Share it and enter it in the <a href="contests.html">Lucky Number Story Contest</a>.</p><button class="btn btn-ghost btn-sm" data-share style="margin-top:10px">Share this tool</button></div>
+  </aside>
+</div></section>
