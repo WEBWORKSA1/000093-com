@@ -1,0 +1,47 @@
+---
+layout: default
+title: "Support 000093 — Donate to Keep the Tools Free"
+description: "Support free China market and number-culture tools. One-time or monthly donations fund hosting, research, videos, hiring and contest prizes."
+root: ""
+---
+<section class="page-hero"><div class="container">
+  <div class="crumbs"><a href="index.html">Home</a> / Support</div>
+  <h1 data-zh="支持我们">Keep 000093 free and independent</h1>
+  <p>Reader support pays for everything the ads don't cover: servers, research, video production, new tools, hiring creators and contest prizes.</p>
+</div></section>
+
+<section class="block"><div class="container split">
+  <div>
+    <div class="card" style="margin-bottom:20px"><div class="progress"><div id="fund-bar" style="width:2%"></div></div><p id="fund-text" class="form-note" style="margin-top:8px"></p></div>
+    <div class="tool" id="donate">
+      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px"><h2 style="font-size:1.4rem;margin:0">Choose your support</h2>
+        <div class="toggle" role="group" aria-label="Frequency"><button aria-pressed="true" data-f="one-time">One-time</button><button aria-pressed="false" data-f="monthly">Monthly</button></div></div>
+      <div class="amounts"><button class="amt" data-v="8" aria-pressed="false">$8</button><button class="amt" data-v="25" aria-pressed="true">$25</button><button class="amt" data-v="88" aria-pressed="false">$88</button><button class="amt" data-v="168" aria-pressed="false">$168</button></div>
+      <div class="field"><label for="custom-amt">Or a custom amount (USD)</label><input id="custom-amt" type="number" min="1" placeholder="e.g. 93"></div>
+      <p>Your gift: <b id="donate-summary" class="num"></b></p>
+      <div id="pay-links" style="display:flex;gap:10px;flex-wrap:wrap;margin:10px 0 18px"></div>
+      <h3>Pledge form</h3>
+      <form data-form="Donation pledge" data-ok="Thank you! We'll send your secure payment link and receipt shortly.">
+        <input type="hidden" name="amount" id="pledge-amount">
+        <div class="row"><div class="field"><label for="d-name">Name (or "Anonymous")</label><input id="d-name" name="name" required></div><div class="field"><label for="d-email">Email</label><input id="d-email" type="email" name="email" required></div></div>
+        <div class="field"><label for="d-use">Direct my gift to</label><select id="d-use" name="allocation"><option>Where it's needed most</option><option>Ongoing operations & hosting</option><option>Promotions & marketing</option><option>Hiring writers & video talent</option><option>Contest prize pool</option></select></div>
+        <div class="field"><label for="d-note">Message for the supporter wall (optional)</label><input id="d-note" name="wall_message" maxlength="120" placeholder="Say something nice…"></div>
+        <label class="check"><input type="checkbox" name="show_on_wall" value="yes"> Show my name on the supporter wall</label>
+        <input class="hp" type="text" name="_honey" tabindex="-1" autocomplete="off">
+        <button class="btn btn-primary btn-block" style="margin-top:14px" type="submit">Pledge my support</button>
+        <p class="form-status" role="status"></p>
+      </form>
+      <p class="form-note">000093.com is an independent publisher, not a registered charity, so donations are generally not tax-deductible. Payments are handled by the provider you choose. We never see or store card numbers.</p>
+    </div>
+  </div>
+  <aside class="sticky">
+    <div class="card tier featured"><span class="ribbon">Monthly</span><h3>Patron · 赞助人</h3><div class="price">$8<small class="muted">/mo</small></div><ul><li>Name on the supporter wall</li><li>Ad-light reading experience (coming)</li><li>Early access to new tools</li></ul></div>
+    <div class="card" style="margin-top:16px"><h3>Where money goes</h3><ul class="muted"><li>35% research & writing</li><li>25% video production</li><li>15% hosting & tools</li><li>15% contest prizes</li><li>10% promotion</li></ul><p class="form-note">Target allocation. We publish updates to supporters.</p></div>
+  </aside>
+</div></section>
+
+<section class="block alt"><div class="container">
+  <h2>Supporter wall</h2>
+  <div class="wall" id="supporter-wall"></div>
+  <p style="margin-top:20px">Businesses: <a href="partner.html">become a sponsor</a> instead and get logo placement.</p>
+</div></section>
